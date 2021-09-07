@@ -22,6 +22,7 @@ func (symbolsTable *SymbolsTable) pushContext() {
 	})
 }
 
+
 func (symbolsTable *SymbolsTable) popContext() {
 	symbolsTable.Contexts = symbolsTable.Contexts[:len(symbolsTable.Contexts)-1]
 	symbolsTable.CurrentPosition -= 1
